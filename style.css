@@ -1,0 +1,392 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(5, 0, 15);
+}
+
+/* importando una fuente uwu */
+@font-face {
+    font-family: 'Asimilates';
+    src: url('Assets/asimilates-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.portada{
+    display: none;
+
+    height: 100vh;
+    position: relative;
+}
+
+.portada.show{
+    display: block;
+
+}
+
+
+.menuBtn{
+    display: none;
+}
+
+
+.portada > div{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background: url("Assets/portadaNobedSQ.avif") no-repeat center/cover;
+    background-position-y: 60%;
+    z-index: 0;
+}
+
+.portada > div .contenedorTit{
+    position: absolute;
+    top: 30%;
+    width: 100vw;
+    padding: 0%;
+}
+
+.contenedorTit > p {
+    color: white;
+    z-index: 1;
+    text-align: center;
+    width: 100%;
+    text-shadow: 0px 7px 20px black;
+
+    font-family: 'Asimilates';
+}
+
+.contenedorTit .titulo{
+    position: absolute;
+    top: 0%;
+    font-size: 5em;
+
+    transform: translateY(-150%);
+}
+
+
+.contenedorTit .nombrecito{
+    position: absolute;
+    font-size: 1.5em;
+    letter-spacing: 0.7vw;
+
+    transform: translateY(50%);
+}
+
+header{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    background-color: rgba(5, 0, 15, 0.658);
+    height: 100px;
+    width: 100vw;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+    z-index: 1;
+}
+
+.miniLogo{
+    position: absolute;
+    bottom: 8vh;
+    left: 10vh;
+    max-height: 10vw;
+    z-index: 1;
+    filter: drop-shadow(-10px 5px 10px black);
+}
+
+.portada .infoPro{
+    border-radius: 5px;
+    padding-right: 20px;
+    border-right: 5px solid rgb(195, 188, 209);
+
+    position: absolute;
+    color: white;
+    z-index: 1;
+
+    font-size: 3vw;
+    right: 6vw;
+    bottom: 6vh;
+    text-shadow: 10px 8px 10px black;
+}
+
+.categorias > li{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.categorias > li > button{
+    padding: 0;
+    margin: 0;
+    width: calc(100vw/6);
+    height: 100%;
+
+    color: white;
+    font-family: 'Asimilates';
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    font-size: 1.5em;
+    transition: font-size 0.3s, color 0.3s;
+}
+
+.categorias > li > button:hover{
+    font-size: 1.7em;
+    color: darkgray;
+}
+
+.categorias{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+
+}
+
+/* sobre mi */
+
+.sobreMi{
+    display: none; 
+}
+
+.sobreMi.show{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.sobreMi .bio{
+    height: 100vh;
+    background-color: blue;
+}
+
+.sobreMi .perso{
+    height: 100vh;
+    background-color: green;
+}
+
+.sobreMi .acros{
+    height: 100vh;
+    background-color: orange;
+}
+
+/* sobre mi */
+/* metas */
+.metas{
+    display: none; 
+}
+
+.metas.show{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.metas .met{
+    height: 100vh;
+    background-color: pink;
+}
+
+.metas .vis{
+    height: 100vh;
+    background-color: yellow;
+}
+
+.metas .mis{
+    height: 100vh;
+    background-color: gray;
+}
+/* metas */
+/* pilares */
+.pilares{
+    display: none; 
+}
+
+.pilares.show{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.pilares .alia{
+    height: 100vh;
+    background-color: aqua;
+}
+
+.pilares .valo{
+    height: 100vh;
+    background-color: skyblue;
+}
+
+.pilares .estra{
+    height: 100vh;
+    background-color: darkcyan;
+}
+    
+.pilares .foda{
+    height: 100vh;
+    background-color: darkgray;
+    
+}
+/* pilares */
+/* cierre */
+.cierre{
+    display: none; 
+}
+
+.cierre.show{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.cierre .conclu{
+    height: 100vh;
+    background-color: darkred;
+}
+
+.cierre .agrad{
+    height: 100vh;
+    background-color: darkviolet;
+}
+
+.cierre .metAlc{
+    height: 100vh;
+    background-color: darkgoldenrod;
+}
+/* cierre */
+
+/* zona en construccion */
+.zonaCons{
+    position: block;
+    height: 100vh;
+    background-color: rgb(19, 19, 19);
+    align-content: center;
+}
+
+.zonaCons > div{
+    position: absolute;
+    left: 50%;
+    color: white;
+    transform: translateX(-50%) translateY(-50%);
+}
+.lucide-pencil-ruler{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* zona en construccion */
+
+/* uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuwuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu */
+/* uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuwuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu */
+@media screen and (orientation: portrait) {
+    .menuBtn{
+        height: 100%;
+        width: 100px;
+        font-size: 2em;
+        display: block;
+        position: absolute;
+        top: 48%;
+        margin: 0;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        color: white;
+        padding: 0;
+
+        transition: color 0.5s, font-size 0.5s;
+    }
+
+    .menuBtn:hover{
+        color: darkgray;
+        font-size: 2.5em;
+    }
+
+    header{
+        height: 10vh;
+    }
+
+    .portada > div{
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        background: url("Assets/portadaNobedSQ.avif") no-repeat center/cover;
+    }
+
+    .miniLogo{
+        bottom: 5vh;
+        left: 5vh;
+        max-height: 20vw;
+    }
+    .portada .infoPro{    
+        font-size: 5vw;
+        right: 10vw;
+        bottom: 6vh;
+    }
+
+    .contenedorTit .titulo{
+        font-size: 10vw;
+    
+        transform: translateY(-150%);
+    }
+    
+    .contenedorTit .nombrecito{
+        font-size: 1.5vw;
+        letter-spacing: 2vw;
+    
+        transform: translateY(200%);
+    }
+
+    .categorias > li > button{
+        width: 100%;
+        height: 100%;
+        font-size: 1.5em;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .categorias > li{
+        width: 100%;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
+        /* padding: 10px;
+        margin: 10px; */
+    }
+    
+    
+    .categorias {
+        opacity: 0;
+        pointer-events: none;
+
+        flex-direction: column;
+        position: absolute;
+        top: 90%;
+        /* left: 70px; */
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 10px;
+        box-shadow: 0px 10px 20px black;
+        backdrop-filter: blur(20px);
+
+        transform: scale(0.9);
+        
+        transition: transform 0.3s, opacity 0.3s;
+    }
+
+    .categorias.show {
+        opacity: 1;
+        pointer-events: auto;
+
+        transform: scale(0.9);
+    }
+
+}

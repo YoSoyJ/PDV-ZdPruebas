@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto de vida</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Assets/LCM300.avif" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <button class="menuBtn" onclick="mostrarMenu()">☰</button>
+        <ul class="categorias">
+            <li><button onclick="toggleCategories('Ini')">INICIO</button></li>
+            <li><button onclick="toggleCategories('Sob')">SOBRE MI</button></li>
+            <li><button onclick="toggleCategories('Met')">METAS</button></li>
+            <li><button onclick="toggleCategories('Pil')">PILARES</button></li>
+            <li><button onclick="toggleCategories('Cie')">CIERRE</button></li>
+        </ul>
+    </header>
+
+    <div class="portada">
+        <div>
+            <div class="contenedorTit">
+                <p class="titulo">PROYECTO DE VIDA</p>
+                <p class="nombrecito">Christopher Jahir López Osorio</p>
+            </div>    
+        </div>
+        <img class="miniLogo" src="Assets/LCM300.avif" alt="LCM">
+        <p class="infoPro">
+            Asesor: Ronald Soto
+        </p>
+    </div>
+
+    <div class="sobreMi">
+        <div class="bio"></div>
+        <div class="perso"></div>
+        <div class="acros"></div>
+        <div class="zonDes"></div>
+    </div>
+
+    <div class="metas">
+        <div class="met"></div>
+        <div class="vis"></div>
+        <div class="mis"></div>
+        <div class="zonDes"></div>
+    </div>
+
+    <div class="pilares">
+        <div class="alia"></div>
+        <div class="valo"></div>
+        <div class="estra"></div>
+        <div class="foda"></div>
+        <div class="zonDes"></div>
+    </div>
+
+    <div class="cierre">
+        <div class="conclu"></div>
+        <div class="agrad"></div>
+        <div class="metAlc"></div>
+        <div class="zonDes"></div>
+    </div>    
+
+    <script src="script.js"></script>
+
+</body>
+</html>
