@@ -56,8 +56,31 @@ function toggleCategories(category){
     }
 }
 
+var contadorEtapa = 0
 
 
+function changeLS(sOr){
+    
+    const etapas = ["Infancia","Niñez","Adolecensia"]
+    const contenidos = [
+        "Nací en 2008, y desde muy pequeño ya mostraba una gran facilidad para hablar; a temprana edad podía expresarme con claridad y no había quien me callara. Mi primera aventura en avión fue un viaje a Petén, aunque un inesperado cambio de clima me enfermó y tuvimos que regresar antes de lo previsto. Inicié mi etapa estudiantil poco después, y ese mismo año la familia creció con la llegada de mi hermano en 2013, una noticia que recibí entre lágrimas de emoción."
+        ,"En la primaria, mantuve una racha constante de excelentes notas, lo que me llevó a ser abanderado en varias ocasiones. Como reconocimiento y herramienta de comunicación, recibí mi primer smartphone, un regalo valioso ya que mi padre viajaba con frecuencia y mi madre trabajaba durante el día, siendo mi abuela quien cuidaba de nosotros. Con la llegada de la pandemia, el mundo cambió radicalmente, y con ello también cambió mi vida"
+        ,"En 2021 cursé primero básico de forma virtual, siendo mi último año de distinción académica y de verdadero orgullo personal. El 2022 fue mi peor año tanto académica como emocionalmente, marcado también por un accidente al ser atropellado, aunque sin lesiones graves. En 2023 regresé a las clases presenciales, un cambio brusco pero que sentí como un nuevo comienzo. En 2024, en bachillerato, logré formar amistades muy valiosas que me han ayudado a recuperar partes de mí que había perdido durante la pandemia, convirtiéndose en mi mejor año en mucho tiempo."
+    ]
+
+    const titEtapa = document.getElementById("titEtapa");
+    const contEtapa = document.getElementById("contEtapa");
+
+    if (sOr == '+' && contadorEtapa < 2) {
+        contadorEtapa += 1;
+    } 
+    if (sOr == '-' && contadorEtapa > 0) {
+        contadorEtapa -= 1;
+    }
+
+    titEtapa.innerText = etapas[contadorEtapa];
+    contEtapa.innerText = contenidos[contadorEtapa];
+}
 
 
 
