@@ -6,6 +6,7 @@ const Sob = document.querySelector('.sobreMi');
 const Met = document.querySelector('.metas')
 const Pil = document.querySelector('.pilares')
 const Cie = document.querySelector('.cierre')
+const Indice = document.getElementById('indice')
 
 function mostrarMenu() {
     menu.classList.toggle('show'); // Añade o quita la clase 'show' al menú
@@ -20,6 +21,7 @@ document.addEventListener('click', function(e){ //se almacena el evento click en
 function toggleCategories(category){
     if(category == 'Ini'){
         Ini.classList.add('show');
+        Indice.innerText = "INICIO";
         Sob.classList.remove('show');
         Met.classList.remove('show');
         Pil.classList.remove('show');
@@ -28,6 +30,7 @@ function toggleCategories(category){
     }if(category == 'Sob'){
         Ini.classList.remove('show');
         Sob.classList.add('show');
+        Indice.innerText = "SOBRE MI";
         Met.classList.remove('show');
         Pil.classList.remove('show');
         Cie.classList.remove('show');
@@ -36,6 +39,7 @@ function toggleCategories(category){
         Ini.classList.remove('show');
         Sob.classList.remove('show');
         Met.classList.add('show');
+        Indice.innerText = "METAS"
         Pil.classList.remove('show');
         Cie.classList.remove('show');
         menu.classList.remove('show');
@@ -44,6 +48,7 @@ function toggleCategories(category){
         Sob.classList.remove('show');
         Met.classList.remove('show');
         Pil.classList.add('show');
+        Indice.innerText = "PILARES"
         Cie.classList.remove('show');
         menu.classList.remove('show');
     }if(category == 'Cie'){
@@ -52,6 +57,7 @@ function toggleCategories(category){
         Met.classList.remove('show');
         Pil.classList.remove('show');
         Cie.classList.add('show');
+        Indice.innerText = "CIERRE"
         menu.classList.remove('show');
     }
 }
