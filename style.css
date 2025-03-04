@@ -198,6 +198,7 @@ header{
     margin: 0;
     width: 100%;
     text-align: center;
+    filter: drop-shadow(0px 8px 4px black);
 }
 
 .contenido .etapaCon{
@@ -211,6 +212,7 @@ header{
     font-size: 2em;
     margin: 0;
     max-height: 100%;
+    filter: drop-shadow(0px 8px 4px black);
 }
 
 /* Cambiar el tamaño de la barra de desplazamiento */
@@ -255,6 +257,7 @@ header{
     border-style: none;
     background-color: transparent;
     color: white;
+    filter: drop-shadow(0px 5px 4px black);
 }
 .botoAccion > button:hover{
     color: rgba(255, 255, 255, 0.5);
