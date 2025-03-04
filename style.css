@@ -389,7 +389,7 @@ header{
 
 /* uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuwuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu */
 /* uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuwuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu */
-@media screen and (orientation: portrait) {
+@media (max-width: 600px) {
     .menuBtn{
         height: 100%;
         width: 100px;
@@ -510,6 +510,10 @@ header{
 
     }
 
+    .etapaCon > p{
+        font-size: 1.5em;
+    }
+
     .bio .botoAccion{
         flex-direction: row;
         margin: 0;
@@ -533,5 +537,9 @@ header{
     }
 
 
+
+}
+
+@media (max-width: 768px) {
 
 }
