@@ -7,6 +7,10 @@
     --color-lila-pastel: #f3e5f5;
 }
 
+*{
+    font-family: 'Asimilates';
+}
+
 html, body{
     margin: 0;
     padding: 0;
@@ -89,7 +93,7 @@ header{
     background-color: var(--color-oscuro);
     /* background-color: rgba(5, 0, 15, 0.658); */
     height: 100px;
-    width: 100vw;
+    width: 100%;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
 
@@ -399,21 +403,27 @@ header .indice{
     font-size: 1.3em;
 }
 
-
-
-
-
-
 .metas .visMis{
     height: 100vh;
     padding: 10%;
     background-color: rosybrown;
+    display: flex;
+    flex-direction: row;
 }
 
-/* .metas .vis{
-    height: 100vh;
-    background-color: yellow;
-} */
+.visMis .VMC{
+    display: flex;
+    flex-direction: column;
+}
+
+.VMC > h1{
+    font-size: 2em;
+}
+
+
+
+
+
 /* metas */
 /* pilares */
 .pilares{
@@ -498,6 +508,12 @@ header .indice{
 /* uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuwuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu */
 /* uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuwuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu */
 @media (max-width: 800px) {
+
+    .etapaCon > p{
+        font-size: 1.5em;
+        text-align: justify;
+    }
+
     .perso .contPers{
         flex-direction: column;
     }
@@ -508,6 +524,7 @@ header .indice{
     .titPe > p{
         border: none;
     }
+    
 
     
     .pers > p{
@@ -591,7 +608,8 @@ header .indice{
         height: 100%;
         font-size: 0.1em;
         padding: 10px;
-        margin: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
     .categorias > li{
@@ -650,7 +668,8 @@ header .indice{
     }
 
     .etapaCon > p{
-        font-size: 1.5em;
+        font-size: 1.3em;
+        text-align: justify;
     }
 
     .bio .botoAccion{
@@ -688,7 +707,7 @@ header .indice{
     }
 
     .pers > p{
-        font-size: 1em;
+        font-size: 1.15em;
     }
 
     .metas .met{
@@ -698,8 +717,6 @@ header .indice{
     .met .conMet{
         flex-direction: column;
     }
-
-
 
     .secMet > p{
         font-size: 1.4em;
