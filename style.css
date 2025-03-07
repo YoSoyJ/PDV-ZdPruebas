@@ -7,6 +7,19 @@
     --color-lila-pastel: #f3e5f5;
 }
 
+.svgBottom{
+    position:absolute;
+    bottom: -1px;
+    left: 0;
+    
+}
+
+.svgTop{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 *{
     font-family: 'Asimilates';
 }
@@ -188,11 +201,13 @@ header .indice{
     padding: 5%;
     display: flex;
     min-height: 100%;
-    background: rgb(13,3,15);
-    background: linear-gradient(0deg, rgba(13,3,15,1) 0%, rgba(30,7,36,1) 100%);
+    background-color: var(--color-medio);
+    /* background: rgb(13,3,15); */
+    /* background: linear-gradient(0deg, rgba(13,3,15,1) 0%, rgba(30,7,36,1) 100%); */
     padding-top: 150px;
     flex-direction: row;
     padding-bottom: 0;
+    position: relative;
 }
 
 .bio .contenido{
@@ -233,7 +248,7 @@ header .indice{
 
 .etapaCon > p{
     text-align: justify;
-    font-size: 2em;
+    font-size: 1.5em;
     margin: 0;
     max-height: 100%;
     filter: drop-shadow(0px 8px 4px black);
@@ -348,9 +363,41 @@ header .indice{
 }
 
 .sobreMi .acros{
-    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    padding: 5%;
+    justify-content: center;
     background-color: orange;
+    text-align: center;
+
+    
+    /* position: relative; */
 }
+
+.acros .lNom{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 1%;
+}
+
+.lNom > h1{
+    font-size: 6em;
+    margin-bottom: 0;
+}
+
+.lNom .wrd{
+    display: flex;
+    flex-direction: row;
+}
+
+.wrd > p{
+    text-align: left;
+    writing-mode: vertical-rl; /*coloca el texto en vertical (como si lo rotara -90 grados)*/
+    text-orientation: upright; /*gira las letras para que esten en la posicion natural vertical*/
+    font-size: 1.3em;
+}
+
 
 
 
@@ -404,24 +451,29 @@ header .indice{
 }
 
 .metas .visMis{
-    height: 100vh;
-    padding: 10%;
+    padding: 5%;
     background-color: rosybrown;
     display: flex;
     flex-direction: row;
+    height: 100%;
 }
+
 
 .visMis .VMC{
     display: flex;
     flex-direction: column;
+    padding: 2%;
+    margin-bottom: 10%;
 }
 
 .VMC > h1{
     font-size: 2em;
+    text-align: center;
 }
 
-
-
+.VMC > p{
+    font-size: 1.2em;
+}
 
 
 /* metas */
@@ -537,6 +589,14 @@ header .indice{
 
     .sobreMi .bio{
         padding-bottom: 10%;
+    }
+
+    .lNom > h1{
+        font-size: 5em;
+    }
+
+    .wrd > p{
+        font-size: 1.2em;
     }
 }
 
@@ -720,6 +780,32 @@ header .indice{
 
     .secMet > p{
         font-size: 1.4em;
+    }
+
+    .sobreMi .acros{
+        flex-direction: column;
+        padding: 2.5%;
+    }
+
+    .acros .lNom{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .lNom > h1{
+        transform: translateY(-30%);
+        margin-right: 5%;
+        /* text-align: center; */
+    }
+
+    .lNom .wrd{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .wrd > p{
+        writing-mode: horizontal-tb;
+        margin: 1%;
     }
 }
 
