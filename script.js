@@ -67,10 +67,10 @@ var contadorEtapa = 0
 
 function changeLS(sOr){
     
-    const etapas = ["Infancia","Niñez","Adolecensia"]
+    const etapas = ["Infancia","Niñez","Adolescencia"]
     const contenidos = [
-        "Nací en 2008, y desde muy pequeño ya mostraba una gran facilidad para hablar; a temprana edad podía expresarme con claridad y no había quien me callara. Mi primera aventura en avión fue un viaje a Petén, aunque un inesperado cambio de clima me enfermó y tuvimos que regresar antes de lo previsto. Inicié mi etapa estudiantil poco después, y ese mismo año la familia creció con la llegada de mi hermano en 2013, una noticia que recibí entre lágrimas de emoción."
-        ,"En la primaria, mantuve una racha constante de excelentes notas, lo que me llevó a ser abanderado en varias ocasiones. Como reconocimiento y herramienta de comunicación, recibí mi primer smartphone, un regalo valioso ya que mi padre viajaba con frecuencia y mi madre trabajaba durante el día, siendo mi abuela quien cuidaba de nosotros. Con la llegada de la pandemia, el mundo cambió radicalmente, y con ello también cambió mi vida"
+        "Llegué a este mundo en 2008. A los 2 años de edad ya podía hablar con claridad, y no había poder humano que me callara. Cuando tenía 4 años volé por primera vez en avión, con destino a Petén. Desafortunadamente, debido al cambio de clima, enfermé y tuvimos que regresar antes de lo planeado. Al cumplir 5 años comencé mi etapa estudiantil, y ese mismo año se unió un nuevo miembro a la familia: mi hermano. Recuerdo haber llorado de la emoción el día en que me fue anunciado su nacimiento."
+        ,"En 2014 terminé mi preprimaria con una medalla de distinción y comencé la primaria al año siguiente. Durante mi primaria mantuve una racha de notas altas que me dieron la oportunidad de ser abanderado en varias ocasiones. Asimismo, como premio y método de comunicación, recibí mi primer smartphone. Mi padre viajaba constantemente y mi madre trabajaba durante el día, por lo que era mi abuela quien nos cuidaba; en ese contexto, el dispositivo fue muy útil. Sería en 2020 cuando todo cambiaría, no solo para mí, sino para el mundo en general, con la llegada de la pandemia."
         ,"En 2021 cursé primero básico de forma virtual, siendo mi último año de distinción académica y de verdadero orgullo personal. El 2022 fue mi peor año tanto académica como emocionalmente, marcado también por un accidente al ser atropellado, aunque sin lesiones graves. En 2023 regresé a las clases presenciales, un cambio brusco pero que sentí como un nuevo comienzo. En 2024, en bachillerato, logré formar amistades muy valiosas que me han ayudado a recuperar partes de mí que había perdido durante la pandemia, convirtiéndose en mi mejor año en mucho tiempo."
     ]
 
