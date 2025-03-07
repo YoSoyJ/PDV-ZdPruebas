@@ -424,14 +424,15 @@ header .indice{
 }
 
 .metas .met{
-    background-color: pink;
+    background-color: var(--color-oscuro);
     padding: 10%;
     padding-top: 115px;
+    padding-bottom: 0;
 }
 
 .met .metTit{
     width: 100%;
-    background-color: orange;
+    color: white;
     padding: 1%;
 }
 
@@ -448,10 +449,13 @@ header .indice{
     display: flex;
     flex-direction: row;
     color: white;
-    background-color: blue;
+    /* background-color: blue; */
 }
 .conMet .secMet{
-    background-color: black;
+    border-left: 1px solid var(--color-gris-azulado);
+    border-right: 1px solid var(--color-gris-azulado);
+    /* background-color: black; */
+    margin: 1%;
     padding: 1%;
     text-align: center;
 }
@@ -461,8 +465,10 @@ header .indice{
 }
 
 .metas .visMis{
+    position: relative;
     padding: 5%;
-    background-color: rosybrown;
+    background: rgb(13,3,15);
+    background: linear-gradient(0deg, rgba(13,3,15,1) 0%, rgba(45,4,74,1) 100%);
     display: flex;
     flex-direction: row;
     height: 100%;
@@ -470,11 +476,15 @@ header .indice{
 
 
 .visMis .VMC{
+    width: 50%;
     display: flex;
     flex-direction: column;
     padding: 2%;
     margin-bottom: 10%;
+    color: white;
+    z-index: 1;
 }
+
 
 .VMC > h1{
     font-size: 2em;
@@ -485,6 +495,10 @@ header .indice{
     font-size: 1.2em;
 }
 
+.VMC > ul{
+    font-size: 1.2em;
+    padding-left: 1%;
+}
 
 /* metas */
 /* pilares */
@@ -593,8 +607,17 @@ header .indice{
         font-size: 1.3em;
     }
 
+    .met .metTit{
+        border-bottom: 1px solid var(--color-gris-azulado);
+    }
+
     .met .conMet{
-    flex-direction: column;
+        flex-direction: column;
+    }
+
+    .conMet .secMet{
+        border: 0;
+        border-bottom: 1px solid var(--color-gris-azulado);
     }
 
     .sobreMi .bio{
@@ -784,8 +807,17 @@ header .indice{
         padding-top: 100px;
     }
 
+    .met .metTit{
+        border-bottom: 1px solid var(--color-gris-azulado);
+    }
+
     .met .conMet{
         flex-direction: column;
+    }
+
+    .conMet .secMet{
+        border: 0;
+        border-bottom: 1px solid var(--color-gris-azulado);
     }
 
     .secMet > p{
@@ -798,6 +830,7 @@ header .indice{
 
     .visMis .VMC{
         margin-bottom: 5%;
+        width: 100%;
     }
 
     .VMC > p{
