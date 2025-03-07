@@ -67,7 +67,7 @@ html, body{
 
 .portada > div .contenedorTit{
     position: absolute;
-    top: 30%;
+    top: calc(20% + 100px);
     width: 100vw;
     padding: 0%;
 }
