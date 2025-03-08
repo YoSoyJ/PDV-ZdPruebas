@@ -1007,5 +1007,14 @@ header .indice{
         font-size: 1.2em;
     }
 
+    .AGSP.glow{
+        opacity: 1;
+        filter: drop-shadow(0px 0px 300px var(--color-dorado));
+    }
+    
+    .AGSP.show{
+        opacity: 1;
+        filter: drop-shadow(0px 0px 5px var(--color-dorado));
+    }
 }
 
