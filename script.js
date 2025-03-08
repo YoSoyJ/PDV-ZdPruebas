@@ -99,7 +99,7 @@ const observer = new IntersectionObserver(entries => {
         setTimeout(() =>{
             seHaMostrado = true
             AGSP.classList.add('glow')
-        }, 2*1000);
+        }, 1*1000);
         setTimeout(() =>{
             AGSP.classList.remove('glow')
             AGSP.classList.add('show')
