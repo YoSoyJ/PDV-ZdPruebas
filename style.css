@@ -642,6 +642,7 @@ header .indice{
 }
 
 .AGSP > p{
+    font-family: 'Times New Roman', Times, serif;
     width: 100%;
     text-align: center;
 }
@@ -980,6 +981,10 @@ header .indice{
         border: 0;
         text-align: justify;
         font-size: 1.2em;
+    }
+
+    .cierre .agrad{
+        padding: 6%;
     }
 
     .conclu > h1{
