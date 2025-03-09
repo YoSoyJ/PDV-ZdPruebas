@@ -90,6 +90,10 @@ function changeLS(sOr){
 
 // Detectar si el elemento está en el viewport
 const AGSP = document.getElementById('AGSP');
+const SUS = document.getElementById('suspenso')
+const s1 = document.getElementById('s1')
+const s2 = document.getElementById('s2')
+const s3 = document.getElementById('s3')
 
 var seHaMostrado = false
 
@@ -97,13 +101,24 @@ const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting && !seHaMostrado) {
         setTimeout(() =>{
-            seHaMostrado = true
-            AGSP.classList.add('glow')
+            s1.classList.add('show')
+            setTimeout(() =>{
+                s2.classList.add('show')
+                setTimeout(() =>{
+                    s3.classList.add('show')
+                    setTimeout(() =>{
+                        seHaMostrado = true
+                        AGSP.classList.add('glow')
+                        setTimeout(() =>{
+                            AGSP.classList.remove('glow')
+                            AGSP.classList.add('show')
+                            SUS.classList.add('hide')
+
+                        }, 3*1000);
+                    }, 1*1000);
+                }, 1*1000);
+            }, 1*1000);
         }, 1*1000);
-        setTimeout(() =>{
-            AGSP.classList.remove('glow')
-            AGSP.classList.add('show')
-        }, 3*1000)
     }
   });
 });
