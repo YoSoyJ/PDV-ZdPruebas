@@ -285,6 +285,7 @@ header .indice{
     margin-right: 0;
     display: flex;
     flex-direction: column;
+    z-index: 2;
 }
 
 .botoAccion > button{
