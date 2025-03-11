@@ -90,6 +90,7 @@ function changeLS(sOr){
 
 // Detectar si el elemento está en el viewport
 const AGSP = document.getElementById('AGSP');
+const detonador = document.getElementById('detonador')
 const SUS = document.getElementById('suspenso')
 const s1 = document.getElementById('s1')
 const s2 = document.getElementById('s2')
@@ -123,4 +124,4 @@ const observer = new IntersectionObserver(entries => {
   });
 });
 
-observer.observe(AGSP);
+observer.observe(detonador);

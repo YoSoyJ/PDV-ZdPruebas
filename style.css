@@ -632,6 +632,7 @@ header .indice{
     transition: opacity 0.5s, filter 3s;
     position: relative;
     overflow: hidden;
+    margin-bottom: 100px;
 }
 
 .AGSP.glow{
